@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: winston-daily-rotate-file
+    versions:
+    - 4.5.0
+    - 4.5.1
+  - dependency-name: kurasuta
+    versions:
+    - 2.2.2
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
